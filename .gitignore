@@ -1,0 +1,5 @@
+.editorconfig
+prepros-6.config
+index.html
+/img
+/css/*.css

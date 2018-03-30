@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz|Montserrat|Inconsolata');
+
+$colorPrincipal: #FF9000;
+	// #00cbff
+$colorSecundario: #003E68;
+$colorTexto: #fff;
+
+
+body{
+	background-color: $colorPrincipal;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 24px;
+}
+
+#logo{
+	width: 100%;
+	height: 25vh;
+	img{
+		width: 180px;
+		margin: 0 auto;
+		display: block;
+		padding-top: 10vh;
+		border-radius: 90px;
+	}
+}
+
+.contenido{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	background: url('../img/bg-azul.png') no-repeat;
+	background-size: cover;
+	background-position: center top;
+	height: 75vh;
+	width: 100vw;
+}
+
+#texto{
+	font-size: 2em;
+	height: 2em;
+	line-height: 2em;
+	margin-top: 3em;
+	color: $colorTexto;
+	overflow: hidden;
+	margin: 0 auto;
+	ul{
+		margin-left: 2.3em;
+		animation: cambiar 7.5s infinite;
+	}
+	@keyframes cambiar {
+		0% { margin-top: -2em; }
+		12% { margin-top: -2em; }
+
+		17% { margin-top: -4em; }
+		29% { margin-top: -4em; }
+
+		34% { margin-top: -6em; }
+		46% { margin-top: -6em; }
+
+		51% { margin-top: -8em; }
+		63% { margin-top: -8em; }
+
+		68% { margin-top: -10em; }
+		96% { margin-top: -10em; }
+
+		100% { margin-top: 0; }
+	}
+}
+
+#info{
+	width: 380px;
+	height: 200px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	color: $colorTexto;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	line-height: 20px;
+	background-color: darken($colorSecundario, 5);
+	margin: 0 auto;
+	padding: 0 50px;
+
+	h2{
+		font-size: 16px;
+		padding-bottom: 2em;
+	}
+}
+
+#social{
+	display: flex;
+	justify-content: center;
+	font-family: 'Inconsolata', sans-serif;
+	font-size: 16px;
+
+	span{
+		margin-top: 20px;
+		a{
+			border: 1px solid $colorTexto;
+			border-radius: 5px;
+			padding: 5px 30px;
+			margin: 10px;
+			text-decoration: none;
+			color: $colorTexto;
+			&:hover{
+				color: $colorSecundario;
+				background-color: $colorTexto;
+			}
+		}
+	}
+}
+
