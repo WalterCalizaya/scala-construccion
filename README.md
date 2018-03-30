@@ -1,6 +1,8 @@
-#Coming Soon Page - Scala Studio
+Coming Soon Page - Scala Studio
+===============================
 
-##Built with
+Built with
+----------
 * PUG
 * SASS
 
